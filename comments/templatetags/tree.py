@@ -19,7 +19,7 @@ def comments_filter(comments_list):
         itr+= """
         <li>
         <div class="col-md-12 mb-2 mt-2 p-0">
-            # <small>{author}</small> | Опубликовано:{timestamp}
+            # <small><b>{author}</b> </small>| Опубликовано:{timestamp}
             <hr>
             <p>{text} | id={id}</p>
 <a href="#" class="reply" data-id="{id}" data-parent={parent_id}>Ответить</a>
