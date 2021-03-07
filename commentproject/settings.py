@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'comments.apps.CommentsConfig',
     'crispy_forms',
+    'snowpenguin.django.recaptcha3',
+
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+RECAPTCHA_PRIVATE_KEY = '6Lf7J3UaAAAAACVn2xY-Gs_JTXy9clyDEjPhhPar'
+RECAPTCHA_PUBLIC_KEY = '6Lf7J3UaAAAAABQxY562xJsYLZ2bh1BPQz2nJAM0'
+RECAPTCHA_DEFAULT_ACTION = 'generic'
+RECAPTCHA_SCORE_THRESHOLD = 0.5
