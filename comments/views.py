@@ -13,8 +13,7 @@ def base(request):
     result = create_comment_tree(comments)
     comment_form=CommentForm(request.POST or None)
     # for i in result:
-    #     print (i)
-    # print(result)
+    #     print (i , '\n')
     return render(
                     request,
                     'base.html',
